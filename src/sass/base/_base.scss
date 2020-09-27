@@ -1,0 +1,19 @@
+// basic definitions for the web app
+
+* {
+  &::after,
+  &::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+  }
+}
+
+html {
+  // defines what 1rem is.
+  font-size: 62.5%;
+}
+
+.App {
+  box-sizing: border-box;
+}
