@@ -4,4 +4,4 @@
  * @param {*} wrapper 
  * @param {*} attribute 
  */
-export const findByTestAttribute = (wrapper, attribute) => wrapper.find(`[data-test=${attribute}]`)
+export const findByTestAttribute = (wrapper, attribute) => wrapper.find(`[data-test='${attribute}']`)

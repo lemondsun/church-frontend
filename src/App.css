@@ -6,5 +6,29 @@
 html {
   font-size: 62.5%; }
 
-.App {
-  box-sizing: border-box; }
+.container {
+  display: grid;
+  grid-template-columns: 5% 40% 40% 5%;
+  grid-template-rows: 5vh 30vh 20vh 20vh 20vh;
+  column-gap: 4rem;
+  row-gap: 5rem;
+  grid-template-areas: 'header header header header' '. top top .' '. mid-left mid-right .' '. mid-left mid-right .' '. bottom bottom .'; }
+
+.hero-section {
+  grid-area: top; }
+  .hero-section__hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.info-section {
+  grid-area: mid-left;
+  background-color: blue; }
+
+.schedule {
+  grid-area: mid-right;
+  background-color: chartreuse; }
+
+.gallery {
+  grid-area: bottom;
+  background-color: crimson; }
