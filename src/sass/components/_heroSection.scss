@@ -1,0 +1,27 @@
+.hero-section {
+  grid-area: top;
+  background-color: aquamarine;
+  position: relative;
+
+  &__hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--main-text{
+      margin: $in-element-padding;
+      position: absolute;
+      bottom: 20%;
+      z-index: 1;
+    }
+
+    &--sub-text{
+      margin: $in-element-padding;
+      position: absolute;
+      bottom: 8%;
+      z-index: 1;
+    }
+  }
+
+
+}

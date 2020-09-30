@@ -1,0 +1,26 @@
+
+.main-section {
+grid-area: main-section;
+display: flex;
+flex-direction: row;
+
+
+
+
+[class^="main-"] {
+  width: 100%;
+  
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
+}
+
+.main-info-section {
+  background-color: blue;
+
+}
+
+.main-schedule {
+  background-color: chartreuse;
+}
+}
