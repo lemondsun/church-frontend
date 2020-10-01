@@ -20,8 +20,20 @@ html {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
-  line-height: 1;
   padding: 3rem; }
+
+.body-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #6E63A5;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.body-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 400; }
 
 .hero-section {
   grid-area: top;
@@ -50,10 +62,17 @@ html {
     width: 100%; }
     .main-section [class^="main-"]:not(:last-child) {
       margin-right: 4%; }
-  .main-section .main-info-section {
-    background-color: blue; }
-  .main-section .main-schedule {
-    background-color: chartreuse; }
+  .main-section__info {
+    padding: 0 4%; }
+  .main-section__schedule {
+    padding: 0 4%; }
+
+.body-header {
+  text-align: center; }
+
+.schedule-text {
+  text-align: center;
+  line-height: 3rem; }
 
 .bottom-section {
   grid-area: bottom;

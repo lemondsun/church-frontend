@@ -1,26 +1,30 @@
-
 .main-section {
-grid-area: main-section;
-display: flex;
-flex-direction: row;
+  grid-area: main-section;
+  display: flex;
+  flex-direction: row;
 
+  [class^="main-"] {
+    width: 100%;
 
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
 
+  &__info {
+    padding: 0 $gutter-horizontal;
+  }
 
-[class^="main-"] {
-  width: 100%;
-  
-  &:not(:last-child) {
-    margin-right: $gutter-horizontal;
+  &__schedule {
+    padding: 0 $gutter-horizontal;
   }
 }
 
-.main-info-section {
-  background-color: blue;
-
+.body-header{
+  text-align: center;
 }
 
-.main-schedule {
-  background-color: chartreuse;
-}
+.schedule-text {
+  text-align: center;
+  line-height: 3rem;
 }
