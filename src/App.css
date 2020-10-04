@@ -40,7 +40,7 @@ html {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #B18C66;
   position: relative;
   width: 100vw;
   padding: 2%;
@@ -132,7 +132,7 @@ html {
   object-fit: cover; }
 
 .copy-section {
-  background-color: #f8f3f1;
+  background-color: #B18C66;
   margin-top: 2%;
   text-align: center; }
   .copy-section__header {
