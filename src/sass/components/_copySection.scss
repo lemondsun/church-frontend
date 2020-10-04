@@ -1,0 +1,10 @@
+.copy-section {
+background-color: $primary-cream;
+margin-top: $gutter-vertical;
+text-align: center;
+
+ &__header {
+   display: inline;
+   margin-right: $gutter-horizontal;
+ }
+}

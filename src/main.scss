@@ -7,15 +7,18 @@
 @import "./src/sass/base/typography";
 @import "./src/sass/base/utilities";
 
-@import "./sass/components/header";
-@import "./sass/components/heroSection";
-@import "./sass/components/homeMainSection";
-@import "./sass/components/homeBottomSection";
+@import "./src/sass/components/header";
+@import "./src/sass/components/heroSection";
+@import "./src/sass/components/homeMainSection";
+@import "./src/sass/components/homeBottomSection";
+@import "./src/sass/components/copySection";
 
-// @import "./src/sass/layout/header";
+
 @import "./src/sass/layout/grid";
 
 @import "./src/sass/pages/home";
 @import "./src/sass/pages/events";
+
+
 
 

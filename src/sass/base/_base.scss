@@ -1,13 +1,13 @@
 // basic definitions for the web app
 
-* {
-  &::after,
-  &::before {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: inherit;
-  }
-}
+// * {
+//   &::after,
+//   &::before {
+//     margin: 0px;
+//     padding: 0px;
+//     box-sizing: inherit;
+//   }
+// }
 
 html {
   // defines what 1rem is.
@@ -15,6 +15,5 @@ html {
 }
 
 .App {
-  // box-sizing: border-box;
-  // height: 1080 px;
+ padding: 0%;
 }

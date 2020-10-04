@@ -30,12 +30,12 @@ export default function HomeMainSection() {
         <p class='body-header schedule-header'>daily schedule</p>
         <p class='body-text schedule-text'>
           <strong>
-            Sun 10 a.m. / Sunday School <br />
+            Sun</strong> 10 a.m. / Sunday School <br />
                 11 a.m. / Praise & Worship <br />
-            Fri 6  p.m. / Choir Rehearsal <br />
+            <strong>Fri</strong> 6  p.m. / Choir Rehearsal <br />
                 7:30 p.m. / Bible Study <br />
-            Wed 7:30 p.m. / Prayer Meeting
-          </strong>
+            <strong>Wed</strong> 7:30 p.m. / Prayer Meeting
+          
         </p>
       </div>
     </div>

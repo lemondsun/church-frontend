@@ -1,10 +1,8 @@
-*::after, *::before {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: inherit; }
-
 html {
   font-size: 62.5%; }
+
+.App {
+  padding: 0%; }
 
 .heading-primary {
   font-family: 'Playfair Display', serif;
@@ -19,8 +17,7 @@ html {
 .App {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
-  padding: 3rem; }
+  font-size: 16px; }
 
 .body-header {
   font-family: 'Source Sans Pro', sans-serif;
@@ -34,6 +31,59 @@ html {
   line-height: 2.5rem;
   font-size: 1.5rem;
   font-weight: 400; }
+
+/* Style the navigation menu */
+.header {
+  position: fixed;
+  z-index: 100; }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  width: 100vw;
+  padding: 2%;
+  opacity: 50%; }
+  .topnav__logo {
+    position: absolute;
+    top: 10%;
+    text-decoration: none;
+    color: #ffffff; }
+  .topnav__title {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 20;
+    margin: 0 4% 0 4%; }
+  .topnav__menu {
+    position: absolute;
+    right: 2.5%;
+    top: 10%;
+    color: #ffffff;
+    height: 5vh; }
+
+.topnav:hover {
+  opacity: 100%; }
+
+.topnav__menu__links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2%; }
+
+/* Style navigation menu links */
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black; }
 
 .hero-section {
   grid-area: top;
@@ -63,9 +113,9 @@ html {
     .main-section [class^="main-"]:not(:last-child) {
       margin-right: 4%; }
   .main-section__info {
-    padding: 0 4%; }
+    padding: 2% 4%; }
   .main-section__schedule {
-    padding: 0 4%; }
+    padding: 2% 4%; }
 
 .body-header {
   text-align: center; }
@@ -76,15 +126,31 @@ html {
 
 .bottom-section {
   grid-area: bottom;
-  background-color: crimson; }
-  .bottom-section .gallery {
-    background-color: blue; }
+  background-color: crimson;
+  position: relative;
+  margin-bottom: 4%; }
+  .bottom-section--sub-header {
+    position: absolute;
+    bottom: 8%;
+    margin: 5%; }
+
+.w-100 {
+  height: 34vh;
+  object-fit: cover; }
+
+.copy-section {
+  background-color: #C6BEBB;
+  margin-top: 2%;
+  text-align: center; }
+  .copy-section__header {
+    display: inline;
+    margin-right: 4%; }
 
 .container {
   height: 170vh;
   display: grid;
   grid-template-columns: 5% 40% 40% 5%;
-  grid-template-rows: 4% 30% 40% 20%;
+  grid-template-rows: 4% 30% 40% 20% 6%;
   column-gap: 4%;
   row-gap: 2%;
-  grid-template-areas: 'header header header header' '. top top .' '. main-section main-section .' '. bottom bottom .'; }
+  grid-template-areas: 'header header header header' '. top top .' '. main-section main-section .' '. bottom bottom .' 'copy copy copy copy'; }

@@ -1,0 +1,76 @@
+/* Style the navigation menu */
+.header {
+  position: fixed;
+  z-index: 100;
+  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  width: 100vw;
+  padding: $gutter-vertical;
+  opacity: 50%;
+
+  &__logo {
+    position: absolute;
+    top: 10%;
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__title {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 20;
+    margin: 0 $gutter-horizontal 0 $gutter-horizontal;
+  }
+
+  &__menu {
+    position: absolute;
+    right: 2.5%;
+    top: 10%;
+    color: $white;
+    height: 5vh;
+  }
+}
+
+.topnav:hover {
+  opacity: 100%;
+}
+
+.topnav__menu__links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: $gutter-vertical;
+
+  &--item {
+  }
+}
+
+/* Style navigation menu links */
+// .topnav a {
+//   color: white;
+//   padding: 14px 16px;
+//   text-decoration: none;
+//   font-size: 17px;
+//   display: block;
+// }
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}

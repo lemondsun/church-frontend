@@ -12,11 +12,11 @@
   }
 
   &__info {
-    padding: 0 $gutter-horizontal;
+    padding: $gutter-vertical $gutter-horizontal;
   }
 
   &__schedule {
-    padding: 0 $gutter-horizontal;
+    padding: $gutter-vertical $gutter-horizontal;
   }
 }
 

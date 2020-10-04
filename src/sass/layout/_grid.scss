@@ -1,29 +1,9 @@
-// .row {
-//   width: $grid-width;
-//   height: 20vh;
-
-//   [class^="col-"] {
-//     margin: $gutter-vertical $gutter-horizontal $gutter-vertical $gutter-horizontal;
-//   }
-
-//   .col-1-of-1 {
-//     width: $grid-width;
-//   }
-
-//   .col-1-of-2 {
-//       // the calc allows for calculations in css to find measurments
-//     // below we have the width of the entire screen 100%
-//     // minus the space between the columns (the gutter)
-//     // divided by 2, the amount of columns in the row.
-//     width: calc((100% - #{$gutter-horizontal})/2)
-//   }
-// }
 
 .container {
   height: 170vh;
   display: grid;
   grid-template-columns: 5% 40% 40% 5%;
-  grid-template-rows: 4% 30% 40% 20%;
+  grid-template-rows: 4% 30% 40% 20% 6%;
   column-gap: $gutter-horizontal;
   row-gap: $gutter-vertical;
   grid-template-areas: 
@@ -31,6 +11,7 @@
   '. top top .'
   '. main-section main-section .'
   '. bottom bottom .'
+  'copy copy copy copy'
   ;
 }
 
