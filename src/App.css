@@ -109,6 +109,8 @@ html {
     padding: 2% 4%; }
   .main-section__schedule {
     padding: 2% 4%; }
+  .main-section .info-body-1 {
+    margin-bottom: 15%; }
 
 .body-header {
   text-align: center; }

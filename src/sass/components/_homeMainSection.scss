@@ -18,6 +18,10 @@
   &__schedule {
     padding: $gutter-vertical $gutter-horizontal;
   }
+
+  .info-body-1 {
+    margin-bottom: $gutter-horizontal-large;
+  }
 }
 
 .body-header{
@@ -28,3 +32,4 @@
   text-align: center;
   line-height: 3rem;
 }
+
