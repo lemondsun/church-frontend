@@ -6,13 +6,19 @@ export default function Header() {
 
   let menuItems = (
     <div data-test="menu-items" class="topnav__menu__links">
-      <Link class="topnav__links--item" to="/events">
+      <Link class="topnav__links--item" to="/events"
+      onClick={() => setItems(!showItems)}
+      >
         Events
       </Link>
-      <Link class="topnav__links--item" to="/contact">
+      <Link class="topnav__links--item" to="/contact"
+      onClick={() => setItems(!showItems)}
+      >
         Contact
       </Link>
-      <Link class="topnav__links--item" to="/testamonies">
+      <Link class="topnav__links--item" to="/testamonies"
+      onClick={() => setItems(!showItems)}
+      >
         Testamonies
       </Link>
     </div>
