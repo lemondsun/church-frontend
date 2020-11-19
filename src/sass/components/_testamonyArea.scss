@@ -1,0 +1,26 @@
+.testamony-area {
+  background-color: $color-white;
+  height: 80vh;
+  width: 70vw;
+  padding: $gutter-horizontal $gutter-vertical;
+  border-radius: 2% 2%;
+
+}
+
+.text-box {
+  background-color: $color-secondary-light;
+  border-radius: 25px;  
+  position: relative;
+  overflow: hidden;
+  box-shadow: 3px 2px $shadow;
+
+  &__user-name {
+    position: absolute;
+    left: 4%;
+    top: 5%;
+  }
+
+  &__user-text {
+    padding: 6% $gutter-vertical 2%;
+  }
+}

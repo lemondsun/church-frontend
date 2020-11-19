@@ -1,0 +1,15 @@
+.testamony-page {
+  background-color: $primary-cream;
+  height: 100vh;
+  padding-top: 10vh;
+
+  &__main-area {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+
+    &--link {
+      width: 20vw;
+    }
+  }
+}

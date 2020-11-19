@@ -17,7 +17,7 @@
     position: absolute;
     top: 10%;
     text-decoration: none;
-    color: $white;
+    color: $color-white;
   }
 
   &__title {
@@ -32,7 +32,7 @@
     position: absolute;
     right: 2.5%;
     top: 10%;
-    color: $white;
+    color: $color-white;
     height: 5vh;
 
     &__links {
@@ -50,7 +50,7 @@
 
 
 .topnav__links--item {
-  color: $white;
+  color: $color-white;
   text-decoration: none;
 }
 
