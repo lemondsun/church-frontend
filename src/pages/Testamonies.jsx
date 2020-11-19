@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Testamonies() {
   return (
     <div class='testamony-page'>
-      <h1 class='heading-primary'>Members Testamonies</h1>
+      <h1 class='heading-primary testamony-page--header'>Members Testamonies</h1>
       <div class='testamony-page__main-area'>
       
     <TestamonyArea />

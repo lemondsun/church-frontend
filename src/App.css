@@ -227,14 +227,17 @@ html {
   height: 80vh;
   width: 70vw;
   padding: 4% 2%;
-  border-radius: 2% 2%; }
+  border-radius: 2% 2%;
+  overflow: scroll; }
 
 .text-box {
   background-color: #ffb900;
   border-radius: 25px;
   position: relative;
-  overflow: hidden;
-  box-shadow: 3px 2px #0e0e0eb2; }
+  overflow: scroll;
+  box-shadow: 3px 2px #0e0e0eb2;
+  height: 20vh;
+  margin-bottom: 10%; }
   .text-box__user-name {
     position: absolute;
     left: 4%;
@@ -271,9 +274,12 @@ html {
   background-color: #f8f3f1;
   height: 100vh;
   padding-top: 10vh; }
+  .testamony-page--header {
+    margin-left: 5vw; }
   .testamony-page__main-area {
     display: flex;
     flex-direction: row;
-    margin-left: 10vw; }
+    margin-left: 5vw; }
     .testamony-page__main-area--link {
+      margin: 0vh 5vw;
       width: 20vw; }

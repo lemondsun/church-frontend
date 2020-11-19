@@ -3,12 +3,17 @@
   height: 100vh;
   padding-top: 10vh;
 
+  &--header {
+    margin-left: 5vw;
+  }
+
   &__main-area {
     display: flex;
     flex-direction: row;
-    margin-left: 10vw;
+    margin-left: 5vw;
 
     &--link {
+      margin: 0vh 5vw;
       width: 20vw;
     }
   }

@@ -4,15 +4,17 @@
   width: 70vw;
   padding: $gutter-horizontal $gutter-vertical;
   border-radius: 2% 2%;
-
+  overflow: scroll;
 }
 
 .text-box {
   background-color: $color-secondary-light;
   border-radius: 25px;  
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   box-shadow: 3px 2px $shadow;
+  height: 20vh;
+  margin-bottom: $gutter-vertical-large;
 
   &__user-name {
     position: absolute;
