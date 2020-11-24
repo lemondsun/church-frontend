@@ -6,7 +6,7 @@ import HomeMainSection from "../components/home/HomeMainSection";
 
 export default function Home() {
   return (
-    <div class="grid home-page">
+    <div class="home-page">
       <HeroSection />
       <HomeMainSection />
       <HomeBottomSection />

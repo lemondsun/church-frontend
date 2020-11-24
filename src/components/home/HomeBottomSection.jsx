@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function HomeBottomSection() {
   return (
     <div class='bottom-section'>
-    <Carousel controls={false}>
+   {/* <Carousel controls={false}>
     <Carousel.Item>
       <img
         className="d-block w-100"
@@ -33,7 +33,7 @@ export default function HomeBottomSection() {
       <p class='heading-secondary bottom-section--sub-header'>
           See galleries of our events
       </p>
-      </Link>
+  </Link>*/}
     </div>
   )
 }

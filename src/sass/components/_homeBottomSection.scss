@@ -1,8 +1,8 @@
 .bottom-section {
-  grid-area: bottom;
   background-color: crimson;
   position: relative;
   margin-bottom: $gutter-horizontal;
+  height: 25%;
  
   &--sub-header {
     position: absolute;

@@ -1,13 +1,18 @@
 .heading-primary {
-  font-family: 'Playfair Display', serif;;
+  font-family: 'Karla', sans-serif;
   color: $primary-purple;
-  font-size: 6rem;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 7rem;
 }
 
 .heading-secondary {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: $highlight-purple;
+  font-family: 'Karla', sans-serif;
+  color: $highlight-pink;
   font-size: 3rem;
+  background-color: $color-white;
+  display: inline;
+  line-height: 3.5rem;
 }
 
 .App {

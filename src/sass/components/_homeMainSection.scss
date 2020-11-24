@@ -1,35 +1,82 @@
 .main-section {
-  grid-area: main-section;
   display: flex;
   flex-direction: row;
+  height: 50%;
+  padding: $gutter-horizontal $in-element-padding;
 
-  [class^="main-"] {
-    width: 100%;
+  &__left {
+    width: 40vw;
+    margin-right: 5%;
+    height: 100%;
 
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
+    &__stream-box {
+      height: 35.9%;
+      margin-bottom: 5%;
+      position: relative;
+      &--image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &--text {
+        position: absolute;
+        top: 40%;
+        margin-left: $in-element-padding;
+        z-index: 20;
+      }
+      &--overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(163, 163, 163, 0.63);
+        z-index: 10;
+        top: 0;
+      }
+    }
+
+    &__photos-box {
+      position: relative;
+      height: 60%;
+
+      &--image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &--header {
+        position: absolute;
+        top: 10%;
+        margin-left: $in-element-padding;
+        z-index: 20;
+      }
+      &--text {
+        position: absolute;
+        bottom: 20%;
+        left: $in-element-padding;;
+        margin-left: $in-element-padding;
+        z-index: 20;
+      }
+
+      &--overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(163, 163, 163, 0.63);
+        z-index: 10;
+        top: 100;
+      }
     }
   }
 
-  &__info {
-    padding: $gutter-vertical $gutter-horizontal;
-  }
+  &__right {
+    background-color: indigo;
+    width: 40vw;
+    margin-left: 5%;
 
-  &__schedule {
-    padding: $gutter-vertical $gutter-horizontal;
-  }
-
-  .info-body-1 {
-    margin-bottom: $gutter-horizontal-large;
+    // &__info-section {
+    //   background-color: indigo;
+    //   width: 40vw;
+    //   height: 100vh;
+    // }
   }
 }
-
-.body-header{
-  text-align: center;
-}
-
-.schedule-text {
-  text-align: center;
-  line-height: 3rem;
-}
-
