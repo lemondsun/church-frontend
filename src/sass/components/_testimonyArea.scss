@@ -1,15 +1,16 @@
-.testamony-area {
+.testimony-area {
   background-color: $color-white;
-  height: 80vh;
-  width: 70vw;
+  height: 60%;
+  width: 70%;
   padding: $gutter-horizontal $gutter-vertical;
   border-radius: 2% 2%;
   overflow: scroll;
+  margin: 10% 15%;
 }
 
 .text-box {
   background-color: $color-secondary-light;
-  border-radius: 25px;  
+  border-radius: 25px;
   position: relative;
   overflow: scroll;
   box-shadow: 3px 2px $shadow;

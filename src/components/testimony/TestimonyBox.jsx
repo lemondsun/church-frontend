@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function TestamonyBox() {
+export default function TestimonyBox() {
   return (
     <div class='text-box'>
         <p class='body-header text-box__user-name'>

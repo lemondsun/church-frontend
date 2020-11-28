@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeMainSection() {
   return (
-    <div  class="main-section">
+    <div class="main-section">
       <div class="main-section__left">
         <div class='main-section__left__stream-box'>
           <img class='main-section__left__stream-box--image' src={require('../../images/eventsOptionImage.jpeg')} />
@@ -12,7 +12,6 @@ export default function HomeMainSection() {
         <div class='main-section__left__stream-box--overlay'></div>
         </div>
         <div class='main-section__left__photos-box'>
-        <div class='main-section__left__photo-box--overlay'></div>
           <img class='main-section__left__photos-box--image' src={require('../../images/PastorJohanandPastorAriel.jpg')} />
           <p class='main-section__left__photos-box--header heading-primary'>
             See photos <br/> of members <br/> and events.
@@ -20,24 +19,30 @@ export default function HomeMainSection() {
           <p class='main-section__left__photos-box--text'>
             <span class='heading-secondary'>Click here to see</span><br /> <sapn class='heading-secondary'>more.</sapn>
           </p>
-          
+          <div class='main-section__left__photos-box--overlay' ></div>
         </div>
-        
-       
       </div>
+
       <div class="main-section__right">
-        <div class='main-section__right__info-section'>
+        <div class='main-section__right__calendar'>
+          <p class='main-section__right__calendar--header heading-primary'>
+            Our Calendar
+            </p>
+          <p class='main-section__right__calendar--body'>
+          <span class='calendar-text body-text'>
+              Sunday Service : 11 AM
+          </span>
+            <hr class="solid"></hr>
+          <span class='calendar-text body-text'>
+              Friday Service : 7 PM
+          </span>
+          <hr class="solid"></hr>
+          <span class='calendar-text body-text'>
+              Wednesday Prayer : 7 PM
+          </span>
+          <hr class="solid"></hr>
+          </p>
         </div>
-        {/*<p class='body-header schedule-header'>daily schedule</p>
-        <p class='body-text schedule-text'>
-          <strong>
-            Sun</strong> 10 a.m. / Sunday School <br />
-                11 a.m. / Praise & Worship <br />
-            <strong>Fri</strong> 6  p.m. / Choir Rehearsal <br />
-                7:30 p.m. / Bible Study <br />
-            <strong>Wed</strong> 7:30 p.m. / Prayer Meeting
-          
-</p>*/}
       </div>
     </div>
   );

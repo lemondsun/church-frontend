@@ -4,10 +4,8 @@
   margin-bottom: $gutter-horizontal;
   height: 25%;
  
-  &--sub-header {
-    position: absolute;
-    bottom: 8%;
-    margin: $in-element-padding;
+  &--header {
+  text-align: center;
   }
 
 }

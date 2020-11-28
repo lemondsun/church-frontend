@@ -52,7 +52,7 @@
       &--text {
         position: absolute;
         bottom: 20%;
-        left: $in-element-padding;;
+        left: $in-element-padding;
         margin-left: $in-element-padding;
         z-index: 20;
       }
@@ -63,20 +63,39 @@
         position: absolute;
         background-color: rgba(163, 163, 163, 0.63);
         z-index: 10;
-        top: 100;
+        top: 0;
       }
     }
   }
 
   &__right {
-    background-color: indigo;
     width: 40vw;
     margin-left: 5%;
+    text-align: center;
 
-    // &__info-section {
-    //   background-color: indigo;
-    //   width: 40vw;
-    //   height: 100vh;
-    // }
+    &__calendar {
+      margin-bottom: $gutter-horizontal-large;
+     
+
+      &--header {
+        margin-bottom: $gutter-horizontal;
+      }
+
+      &--body {
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10%;
+        height: 80%;
+        width: 80%;
+        padding: $gutter-horizontal 0%;
+      }
+    }
   }
 }
+
+.calendar-text {
+  padding: $gutter-horizontal 0%;
+}
+
+

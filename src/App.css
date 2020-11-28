@@ -37,8 +37,19 @@ html {
 .body-text {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 2.7rem;
   font-weight: 400; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(163, 163, 163, 0.5); }
+
+.solid {
+  width: 60%;
+  margin-left: 20%;
+  border-bottom: 3px solid black; }
 
 /* Style the navigation menu */
 .header {
@@ -162,21 +173,34 @@ html {
         position: absolute;
         background-color: rgba(163, 163, 163, 0.63);
         z-index: 10;
-        top: 100; }
+        top: 0; }
   .main-section__right {
-    background-color: indigo;
     width: 40vw;
-    margin-left: 5%; }
+    margin-left: 5%;
+    text-align: center; }
+    .main-section__right__calendar {
+      margin-bottom: 15%; }
+      .main-section__right__calendar--header {
+        margin-bottom: 4%; }
+      .main-section__right__calendar--body {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10%;
+        height: 80%;
+        width: 80%;
+        padding: 4% 0%; }
+
+.calendar-text {
+  padding: 4% 0%; }
 
 .bottom-section {
   background-color: crimson;
   position: relative;
   margin-bottom: 4%;
   height: 25%; }
-  .bottom-section--sub-header {
-    position: absolute;
-    bottom: 8%;
-    margin: 5%; }
+  .bottom-section--header {
+    text-align: center; }
 
 .w-100 {
   height: 34vh;
@@ -271,13 +295,14 @@ html {
     font-size: 6rem;
     font-weight: 100; }
 
-.testamony-area {
+.testimony-area {
   background-color: #ffffff;
-  height: 80vh;
-  width: 70vw;
+  height: 60%;
+  width: 70%;
   padding: 4% 2%;
   border-radius: 2% 2%;
-  overflow: scroll; }
+  overflow: scroll;
+  margin: 10% 15%; }
 
 .text-box {
   background-color: #ffb900;
@@ -302,16 +327,23 @@ html {
   grid-area: events-main-section;
   height: 100vh; }
 
-.testamony-page {
+.testimony-page {
   background-color: #f8f3f1;
-  height: 100vh;
-  padding-top: 10vh; }
-  .testamony-page--header {
-    margin-left: 5vw; }
-  .testamony-page__main-area {
-    display: flex;
-    flex-direction: row;
-    margin-left: 5vw; }
-    .testamony-page__main-area--link {
-      margin: 0vh 5vw;
-      width: 20vw; }
+  height: 100%; }
+
+.hero-section {
+  height: 30%;
+  background-color: coral;
+  position: relative; }
+  .hero-section--image {
+    width: 100%;
+    height: 100%; }
+  .hero-section--header {
+    margin-left: 4%;
+    position: absolute;
+    top: 40%; }
+  .hero-section--link {
+    margin-left: 4%;
+    position: absolute;
+    top: 60%;
+    left: 4%; }

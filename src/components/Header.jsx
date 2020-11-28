@@ -16,10 +16,10 @@ export default function Header() {
       >
         Contact
       </Link>
-      <Link class="topnav__links--item" to="/testamonies"
+      <Link class="topnav__links--item" to="/testimonies"
       onClick={() => setItems(!showItems)}
       >
-        Testamonies
+        Testimonies
       </Link>
     </div>
   );

@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 export default function HomeBottomSection() {
   return (
     <div class='bottom-section'>
+      <p class='bottom-section--header heading-primary'>
+        Our work around the world
+      </p>
    {/* <Carousel controls={false}>
     <Carousel.Item>
       <img

@@ -1,0 +1,32 @@
+.testimony-page {
+  background-color: $primary-cream;
+  height: 100%;
+}
+
+.main-area {
+ 
+}
+
+.hero-section {
+  height: 30%;
+  background-color: coral;
+  position: relative;
+
+  &--image {
+    width: 100%;
+    height: 100%
+  }
+
+  &--header {
+    margin-left: $gutter-horizontal;
+    position: absolute;
+    top: 40%;
+  }
+
+  &--link {
+    margin-left: $gutter-horizontal;
+    position: absolute;
+    top: 60%;
+    left: $gutter-horizontal;
+  }
+}
