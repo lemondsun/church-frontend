@@ -10,7 +10,7 @@ html {
 .heading-primary {
   font-family: 'Karla', sans-serif;
   color: #2005aa;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 800;
   line-height: 7rem; }
 
@@ -44,7 +44,9 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(163, 163, 163, 0.5); }
+  background-color: rgba(163, 163, 163, 0.5);
+  top: 0%;
+  left: 0%; }
 
 .solid {
   width: 60%;
@@ -73,7 +75,7 @@ html {
     top: 10%;
     left: 35%;
     z-index: 20;
-    margin: 0 4% 0 4%; }
+    margin: 0 5% 0 5%; }
   .topnav__menu {
     position: absolute;
     right: 2.5%;
@@ -124,7 +126,7 @@ html {
   display: flex;
   flex-direction: row;
   height: 50%;
-  padding: 4% 5%; }
+  padding: 5% 5%; }
   .main-section__left {
     width: 40vw;
     margin-right: 5%;
@@ -181,7 +183,7 @@ html {
     .main-section__right__calendar {
       margin-bottom: 15%; }
       .main-section__right__calendar--header {
-        margin-bottom: 4%; }
+        margin-bottom: 5%; }
       .main-section__right__calendar--body {
         background-color: #ffffff;
         display: flex;
@@ -189,15 +191,15 @@ html {
         margin: 0px 10%;
         height: 80%;
         width: 80%;
-        padding: 4% 0%; }
+        padding: 5% 0%; }
 
 .calendar-text {
-  padding: 4% 0%; }
+  padding: 5% 0%; }
 
 .bottom-section {
   background-color: crimson;
   position: relative;
-  margin-bottom: 4%;
+  margin-bottom: 5%;
   height: 25%; }
   .bottom-section--header {
     text-align: center; }
@@ -212,94 +214,13 @@ html {
   text-align: center; }
   .copy-section__header {
     display: inline;
-    margin-right: 4%; }
-
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  width: 25vw;
-  margin: 15%; }
-  .card__side {
-    height: 30rem;
-    transition: all 1s;
-    font-size: 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backface-visibility: hidden;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    .card__side--front {
-      background-color: #ffffff; }
-    .card__side--back {
-      transform: rotateY(-180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-  .card:hover .card__side--front {
-    transform: rotateY(180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0deg);
-    height: 30rem; }
-  .card__picture {
-    background-size: cover;
-    height: 23rem;
-    background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-  .card__heading {
-    font-size: 2.8rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: right;
-    color: #ffffff;
-    position: absolute;
-    top: 10rem;
-    right: 2rem;
-    width: 75%; }
-  .card__heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
-  .card__details ul {
-    list-style: none;
-    width: 80%;
-    color: #000000; }
-    .card__details ul li {
-      text-align: center;
-      font-size: 1.5rem;
-      padding: 1rem; }
-      .card__details ul li:not(:last-child) {
-        border-bottom: 1px solid #000000; }
-  .card__side--back {
-    height: 50rem; }
-  .card__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .card__price-box {
-    text-align: center;
-    margin-bottom: 8rem;
-    color: #ffffff; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
+    margin-right: 5%; }
 
 .testimony-area {
   background-color: #ffffff;
   height: 60%;
   width: 70%;
-  padding: 4% 2%;
+  padding: 5% 2%;
   border-radius: 2% 2%;
   overflow: scroll;
   margin: 10% 15%; }
@@ -323,10 +244,6 @@ html {
   height: 200vh;
   width: 100vw; }
 
-.events {
-  grid-area: events-main-section;
-  height: 100vh; }
-
 .testimony-page {
   background-color: #f8f3f1;
   height: 100%; }
@@ -339,11 +256,55 @@ html {
     width: 100%;
     height: 100%; }
   .hero-section--header {
-    margin-left: 4%;
+    margin-left: 5%;
     position: absolute;
     top: 40%; }
   .hero-section--link {
-    margin-left: 4%;
+    margin-left: 5%;
     position: absolute;
     top: 60%;
-    left: 4%; }
+    left: 5%; }
+
+.our-story-page {
+  height: 100%;
+  background-color: #f8f3f1; }
+
+.story-hero-section {
+  height: 30%;
+  position: relative; }
+  .story-hero-section--image {
+    width: 100%;
+    height: 100%; }
+  .story-hero-section__header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    z-index: 100; }
+    .story-hero-section__header--top {
+      margin-right: 15%;
+      width: 100%; }
+    .story-hero-section__header--bottom {
+      width: 100%;
+      margin-left: 40%; }
+
+.story-main-section {
+  height: 70%;
+  padding: 5%;
+  display: flex; }
+  .story-main-section__info {
+    background-color: purple;
+    width: 40%;
+    height: 80%;
+    margin-right: 10%; }
+    .story-main-section__info--header {
+      text-align: center; }
+    .story-main-section__info--text {
+      line-height: 150%; }
+  .story-main-section__directions {
+    background-color: lime;
+    width: 40%;
+    margin-left: 10%; }
+    .story-main-section__directions--header {
+      text-align: center; }

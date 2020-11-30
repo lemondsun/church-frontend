@@ -1,0 +1,64 @@
+.our-story-page {
+  height: 100%;
+  background-color: $primary-cream;
+}
+
+.story-hero-section {
+  height: 30%;
+  position: relative;
+
+  &--image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: $gutter-horizontal-large;
+    top: 20%;
+    z-index: 100;
+
+    &--top {
+      margin-right: $gutter-horizontal-large;
+      width: 100%;
+    }
+
+    &--bottom {
+      width: 100%;
+      margin-left: 40%;
+    }
+  }
+}
+
+.story-main-section {
+  height: 70%;
+  padding: $gutter-horizontal;
+  display: flex;
+
+  &__info {
+    background-color: purple;
+    width: 40%;
+    height: 80%;
+    margin-right: 10%;
+
+    &--header {
+      text-align: center;
+    }
+
+    &--text {
+      line-height: 150%;
+    }
+  }
+
+  &__directions {
+    background-color: lime;
+    width: 40%;
+    margin-left: 10%;
+
+    &--header {
+      text-align: center;
+    }
+  }
+}

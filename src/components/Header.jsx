@@ -6,10 +6,10 @@ export default function Header() {
 
   let menuItems = (
     <div data-test="menu-items" class="topnav__menu__links">
-      <Link class="topnav__links--item" to="/events"
+      <Link class="topnav__links--item" to="/ourstory"
       onClick={() => setItems(!showItems)}
       >
-        Events
+        Our Story
       </Link>
       <Link class="topnav__links--item" to="/contact"
       onClick={() => setItems(!showItems)}

@@ -14,7 +14,7 @@ export default function HomeMainSection() {
         <div class='main-section__left__photos-box'>
           <img class='main-section__left__photos-box--image' src={require('../../images/PastorJohanandPastorAriel.jpg')} />
           <p class='main-section__left__photos-box--header heading-primary'>
-            See photos <br/> of members <br/> and events.
+            Read our <br/>members testimonies.
           </p>
           <p class='main-section__left__photos-box--text'>
             <span class='heading-secondary'>Click here to see</span><br /> <sapn class='heading-secondary'>more.</sapn>
