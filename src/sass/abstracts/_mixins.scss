@@ -1,0 +1,78 @@
+//media  query manager
+/*
+0-600px: phone
+600-900px: Tablet portrait
+900-1200px: Tablet landscape
+[1200-1800] is where our normal styles apply
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+
+  @if $breakpoint == 501 {
+    @media only screen and (min-width: 501px) {
+      @content;
+    }
+  }
+
+  // @if $breakpoint == phoneSlim {
+  //   @media only screen and (max-width: 25em) {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == 501 {
+  //   @media only screen and (max-width: 501px) 
+  //   {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == 670 {
+  //   @media only screen and (max-width: 670px) 
+  //   {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == 770 {
+  //   @media only screen and (max-width: 770px) 
+  //   {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == 1025 {
+  //   @media only screen and (max-width: 1025px) 
+  //   {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == 1140 {
+  //   @media only screen and (max-width: 1140px) 
+  //   {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == 1270 {
+  //   @media only screen and (max-width: 1270px) 
+  //   {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == 1440 {
+  //   @media only screen and (max-width: 1461px) 
+  //   {
+  //     @content;
+  //   }
+  // }
+}

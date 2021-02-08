@@ -1,11 +1,15 @@
 .main-section {
+  @include respond(501) {
+    flex-direction: row;
+  }
+  
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 50%;
   padding: $gutter-horizontal $in-element-padding;
 
   &__left {
-    width: 40vw;
+    width: 90vw;
     margin-right: 5%;
     height: 100%;
 
@@ -69,8 +73,8 @@
   }
 
   &__right {
-    width: 40vw;
-    margin-left: 5%;
+    width: 90vw;
+    margin-top: $gutter-horizontal;
     text-align: center;
 
     &__calendar {
@@ -90,6 +94,10 @@
         width: 80%;
         padding: $gutter-horizontal 0%;
       }
+    }
+
+    &__events {
+      
     }
   }
 }

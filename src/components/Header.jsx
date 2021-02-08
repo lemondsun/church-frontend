@@ -26,12 +26,10 @@ export default function Header() {
 
   return (
     <div class="header">
-      <div class="topnav">
-        <Link to='/' data-test="logo" class="topnav__logo">
-          Logo
-        </Link>
-        <p data-test="header-title" class="topnav__title body-header">
-          JUDAH TABERNACLE OF PRAISE
+      <div class="topnav" >
+       
+        <p data-test="header-title" class="topnav__title header-title">
+          JTOP
         </p>
         {showItems ? menuItems : null}
         <button
@@ -41,9 +39,9 @@ export default function Header() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
           >
             <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
           </svg>

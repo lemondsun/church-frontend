@@ -1,15 +1,47 @@
 .bottom-section {
-  background-color: crimson;
+  @include respond(501) {
+  }
+
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: $gutter-horizontal;
   height: 25%;
- 
-  &--header {
-  text-align: center;
-  }
+  background-color: $color-secondary-dark;
+  padding-top: $gutter-vertical;
 
+  &--header {
+    position: absolute;
+    left: 13%;
+    z-index: 20;
+  }
 }
-.w-100{
-  height: 34vh;
-  object-fit: cover;
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  padding-top: $gutter-vertical;
+
+  &--header {
+    text-align: center;
+    width: 40%;
+    display: inline;
+    margin: $gutter-vertical 30%;
+  }
+}
+
+.address-box {
+
+  width: 40%;
+  height: 30%;
+  margin: $gutter-horizontal $gutter-vertical;
+  text-align: center;
+  padding-top: $gutter-vertical;
+}
+
+.address-text {
+  display: inline-block;
+  margin: $gutter-vertical 0%;
 }

@@ -1,23 +1,18 @@
 import React from 'react'
+import Logo from '../../images/Logo.png'
 
 export default function HeroSection() {
   return (
-    <div class="hero-section">
-      <div class='hero-section__overlay'></div>
-      <img
-        data-test='hero-image'
-      class='hero-section__hero-image'
-      src={require("../../images/heroImage.JPG")}
-      alt="The two founding pastors of the church"
-      />
+    <div class="main-page-hero-section">
+     
+      <img class='logo' src={Logo} alt=''/>
       <p
-        data-test='hero-main-text'
-        class='heading-primary hero-section__hero-image--main-text'
+        class='heading-primary main-page-hero-section--main-text'
       >
        We strive to<br/>share the love<br/> of God around the world.
       </p>
       <p 
-      class='heading-secondary hero-section__hero-image--sub-text'
+      class='heading-secondary main-page-hero-section--sub-text'
       >
         Click here to learn more about our ministry <text>&#8594;</text>
       </p>

@@ -1,37 +1,44 @@
 .heading-primary {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   color: $primary-purple;
-  font-size: 8rem;
+  font-size: 3rem;
   font-weight: 800;
-  line-height: 7rem;
+  line-height: 3.5rem;
 }
 
 .heading-secondary {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   color: $highlight-pink;
-  font-size: 3rem;
+  font-size: 2rem;
   background-color: $color-white;
-  display: inline;
-  line-height: 3.5rem;
+  line-height: 2.5rem;
 }
 
 .App {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-   font-size: 16px; 
+  font-size: 16px;
 }
 
 .body-header {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: $primary-purple;
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
+.header-title {
+  font-family: "Source Sans Pro", sans-serif;
+  color: $color-white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .body-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 2.5rem;
-  font-size: 2.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
 }

@@ -1,7 +1,7 @@
 /* Style the navigation menu */
 .header {
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   
 }
 
@@ -11,7 +11,7 @@
   position: relative;
   width: 100vw;
   padding: $gutter-vertical;
-  opacity: 50%;
+ display: block;
 
   &__logo {
     position: absolute;
@@ -32,10 +32,10 @@
     position: absolute;
     right: 2.5%;
     top: 10%;
-    color: $color-white;
-    height: 5vh;
+    height: 4vh;
 
     &__links {
+      height: 10vh;
       display: flex;
       flex-direction: column;
       text-align: center;

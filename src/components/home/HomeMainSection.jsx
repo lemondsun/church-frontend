@@ -2,6 +2,8 @@ import React from "react";
 
 export default function HomeMainSection() {
   return (
+    <div>
+      
     <div class="main-section">
       <div class="main-section__left">
         <div class='main-section__left__stream-box'>
@@ -43,7 +45,9 @@ export default function HomeMainSection() {
           <hr class="solid"></hr>
           </p>
         </div>
+        
       </div>
-    </div>
+      </div>
+      </div>
   );
 }

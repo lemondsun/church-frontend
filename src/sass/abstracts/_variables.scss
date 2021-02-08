@@ -11,7 +11,7 @@ $color-black: #000000;
 $shadow: #0e0e0eb2;
 
 $color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+$color-secondary-dark: rgb(255, 145, 0);
 
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
@@ -24,6 +24,7 @@ $gutter-vertical: 2%;
 $gutter-horizontal: 5%;
 $gutter-horizontal-large: 15%;
 $gutter-vertical-large: 10%;
+$gutter-horizontal-small: 5%;
 
 // PADDING
 $in-element-padding: 5%;
