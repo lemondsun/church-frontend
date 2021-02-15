@@ -3,12 +3,13 @@
   height: 100%;
 }
 
-.main-area {
- 
-}
+
 
 .hero-section {
-  height: 30%;
+  @include respond(501) {
+    height: 80vh;
+  }
+  height: 20%;
   background-color: coral;
   position: relative;
 
@@ -29,4 +30,9 @@
     top: 60%;
     left: $gutter-horizontal;
   }
+}
+
+.main-area {
+ height: 70%;
+ padding: 5%
 }

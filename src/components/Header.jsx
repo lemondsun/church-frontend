@@ -25,12 +25,12 @@ export default function Header() {
   );
 
   return (
-    <div class="header">
       <div class="topnav" >
-       
+       <Link to='/'>
         <p data-test="header-title" class="topnav__title header-title">
-          JTOP
+          Church Name
         </p>
+        </Link>
         {showItems ? menuItems : null}
         <button
           data-test="menu"
@@ -47,6 +47,6 @@ export default function Header() {
           </svg>
         </button>
       </div>
-    </div>
+   
   );
 }

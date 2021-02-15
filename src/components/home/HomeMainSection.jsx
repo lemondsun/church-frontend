@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 export default function HomeMainSection() {
   return (
-    <div>
-      
     <div class="main-section">
       <div class="main-section__left">
         <div class='main-section__left__stream-box'>
@@ -14,13 +14,15 @@ export default function HomeMainSection() {
         <div class='main-section__left__stream-box--overlay'></div>
         </div>
         <div class='main-section__left__photos-box'>
-          <img class='main-section__left__photos-box--image' src={require('../../images/PastorJohanandPastorAriel.jpg')} />
+          <img class='main-section__left__photos-box--image' src={require('../../images/testimonyImage.jpg')} />
           <p class='main-section__left__photos-box--header heading-primary'>
             Read our <br/>members testimonies.
           </p>
+            <Link to='/testimonies'>
           <p class='main-section__left__photos-box--text'>
             <span class='heading-secondary'>Click here to see</span><br /> <sapn class='heading-secondary'>more.</sapn>
-          </p>
+              </p>
+              </Link>
           <div class='main-section__left__photos-box--overlay' ></div>
         </div>
       </div>
@@ -46,7 +48,6 @@ export default function HomeMainSection() {
           </p>
         </div>
         
-      </div>
       </div>
       </div>
   );

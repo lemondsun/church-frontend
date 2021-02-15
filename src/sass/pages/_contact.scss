@@ -1,0 +1,47 @@
+.contact {
+  @include respond(501) {
+    padding: 10% 5% 0% 5%;
+  }
+  height: 100vh;
+ padding: 15% 5% 0% 5%;
+
+ &__form{
+  @include respond(501) {
+    height: 60vh;
+  }
+   background-color: white;
+   height:50%;
+  padding: 5%;
+ }
+}
+
+.name-section{
+display: flex;
+flex-direction: column;
+
+
+}
+
+.name-section > *{
+  width: 40%;
+  margin-bottom: 2.5%;
+}
+
+.message-section {
+  @include respond(501) {
+    margin-top: 5%;
+  }
+  margin-top: 10%;
+
+  &--text {
+    width: 70%;
+    height: 150px;
+  }
+
+  &--button{
+    margin: 0% 0% 10% 5%;
+    height: 30px;
+    border: none;
+  }
+}
+

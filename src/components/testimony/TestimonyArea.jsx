@@ -5,9 +5,9 @@ export default function TestimonyArea() {
   return (
     <div class='testimony-area'>
       <TestimonyBox />
-
       <TestimonyBox />
-
+      <TestimonyBox />
+      <TestimonyBox />
       <TestimonyBox />
     </div>
   )

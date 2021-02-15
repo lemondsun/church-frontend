@@ -16,7 +16,7 @@ html {
   font-size: 62.5%; }
 
 .App {
-  height: 200vh;
+  height: 200%;
   margin: 0px;
   padding: 0px;
   background-color: #f8f3f1; }
@@ -27,6 +27,10 @@ html {
   font-size: 3rem;
   font-weight: 800;
   line-height: 3.5rem; }
+  @media only screen and (min-width: 501px) {
+    .heading-primary {
+      font-size: 8rem;
+      line-height: 8.5rem; } }
 
 .heading-secondary {
   font-family: "Karla", sans-serif;
@@ -34,6 +38,13 @@ html {
   font-size: 2rem;
   background-color: #ffffff;
   line-height: 2.5rem; }
+  @media only screen and (min-width: 501px) {
+    .heading-secondary {
+      font-size: 5rem;
+      line-height: 6.5rem; } }
+
+a:link {
+  text-decoration: none; }
 
 .App {
   font-family: "Lato", sans-serif;
@@ -46,19 +57,27 @@ html {
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase; }
+  @media only screen and (min-width: 501px) {
+    .body-header {
+      font-size: 3.5rem; } }
 
 .header-title {
   font-family: "Source Sans Pro", sans-serif;
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
 
 .body-text {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.5rem;
   font-size: 1.7rem;
   font-weight: 400; }
+  @media only screen and (min-width: 501px) {
+    .body-text {
+      font-size: 3.7rem;
+      line-height: 3.5rem; } }
 
 .overlay {
   width: 100%;
@@ -74,63 +93,57 @@ html {
   border-bottom: 3px solid black; }
 
 /* Style the navigation menu */
-.header {
-  position: fixed;
-  z-index: 1000; }
-
 .topnav {
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 8%;
   background-color: #B18C66;
-  position: relative;
   width: 100vw;
-  padding: 2%;
-  display: block; }
-  .topnav__logo {
-    position: absolute;
-    top: 10%;
-    text-decoration: none;
-    color: #ffffff; }
+  display: block;
+  text-align: center; }
   .topnav__title {
-    position: absolute;
-    top: 10%;
-    left: 35%;
-    z-index: 20;
-    margin: 0 5% 0 5%; }
+    z-index: 20; }
   .topnav__menu {
     position: absolute;
     right: 2.5%;
     top: 10%;
-    height: 4vh; }
+    height: 6vh; }
     .topnav__menu__links {
-      height: 10vh;
+      width: 100%;
+      position: absolute;
+      z-index: 1000;
+      height: 12vh;
       display: flex;
       flex-direction: column;
       text-align: center;
-      margin-top: 2%; }
-
-.topnav:hover {
-  opacity: 100%; }
+      background-color: #B18C66; }
 
 .topnav__links--item {
   color: #ffffff;
   text-decoration: none; }
-
-.topnav a:hover {
-  color: #ff06b4;
-  text-decoration: none; }
+  @media only screen and (min-width: 501px) {
+    .topnav__links--item {
+      font-size: 2rem; } }
 
 .main-page-hero-section {
-  height: 25%;
+  height: 20%;
   background-color: #ff9100;
   overflow: scroll; }
+  @media only screen and (min-width: 501px) {
+    .main-page-hero-section {
+      height: 80vh; } }
   .main-page-hero-section--main-text {
-    margin: 5%; }
+    margin: 0 5%; }
   .main-page-hero-section--sub-text {
-    margin: 0% 7%; }
+    margin: 2.5% 7%; }
 
 .logo {
-  width: 50%;
-  margin: 10% 25% 5% 25%; }
+  width: 40%;
+  margin: 4.5% 30% 0% 30%; }
+  @media only screen and (min-width: 501px) {
+    .logo {
+      margin: .1% 30% 0% 30%; } }
 
 .main-section {
   display: flex;
@@ -157,6 +170,9 @@ html {
         top: 40%;
         margin-left: 5%;
         z-index: 20; }
+        @media only screen and (min-width: 501px) {
+          .main-section__left__stream-box--text {
+            top: 30%; } }
       .main-section__left__stream-box--overlay {
         width: 100%;
         height: 100%;
@@ -166,7 +182,7 @@ html {
         top: 0; }
     .main-section__left__photos-box {
       position: relative;
-      height: 60%; }
+      height: 50%; }
       .main-section__left__photos-box--image {
         width: 100%;
         height: 100%;
@@ -176,12 +192,18 @@ html {
         top: 10%;
         margin-left: 5%;
         z-index: 20; }
+        @media only screen and (min-width: 501px) {
+          .main-section__left__photos-box--header {
+            top: 5%; } }
       .main-section__left__photos-box--text {
         position: absolute;
-        bottom: 20%;
-        left: 5%;
+        bottom: 55%;
+        left: 1%;
         margin-left: 5%;
         z-index: 20; }
+        @media only screen and (min-width: 501px) {
+          .main-section__left__photos-box--text {
+            bottom: 50%; } }
       .main-section__left__photos-box--overlay {
         width: 100%;
         height: 100%;
@@ -213,7 +235,6 @@ html {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 5%;
   height: 25%;
   background-color: #ff9100;
   padding-top: 2%; }
@@ -229,9 +250,9 @@ html {
   padding-top: 2%; }
   .info-section--header {
     text-align: center;
-    width: 40%;
+    width: 60%;
     display: inline;
-    margin: 2% 30%; }
+    margin: 2% 5%; }
 
 .address-box {
   width: 40%;
@@ -244,6 +265,16 @@ html {
   display: inline-block;
   margin: 2% 0%; }
 
+.social-media {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-left: 10%;
+  padding: 10%; }
+
+.social-icon {
+  margin: 5%; }
+
 .copy-section {
   background-color: #B18C66;
   height: 4%;
@@ -254,30 +285,24 @@ html {
 
 .testimony-area {
   background-color: #ffffff;
-  height: 60%;
+  height: 100%;
   width: 70%;
   padding: 5% 2%;
   border-radius: 2% 2%;
   overflow: scroll;
-  margin: 10% 15%; }
+  margin: 10% 15%;
+  padding: 5%; }
 
 .text-box {
   background-color: #ffb900;
-  border-radius: 25px;
-  position: relative;
   overflow: scroll;
   box-shadow: 3px 2px #0e0e0eb2;
-  height: 20vh;
+  height: 30vh;
   margin-bottom: 10%; }
-  .text-box__user-name {
-    position: absolute;
-    left: 4%;
-    top: 5%; }
   .text-box__user-text {
     padding: 6% 2% 2%; }
 
 .home-page {
-  height: 200vh;
   width: 100vw; }
 
 .testimony-page {
@@ -285,9 +310,12 @@ html {
   height: 100%; }
 
 .hero-section {
-  height: 30%;
+  height: 20%;
   background-color: coral;
   position: relative; }
+  @media only screen and (min-width: 501px) {
+    .hero-section {
+      height: 80vh; } }
   .hero-section--image {
     width: 100%;
     height: 100%; }
@@ -301,13 +329,55 @@ html {
     top: 60%;
     left: 5%; }
 
+.main-area {
+  height: 70%;
+  padding: 5%; }
+
+.contact {
+  height: 100vh;
+  padding: 15% 5% 0% 5%; }
+  @media only screen and (min-width: 501px) {
+    .contact {
+      padding: 10% 5% 0% 5%; } }
+  .contact__form {
+    background-color: white;
+    height: 50%;
+    padding: 5%; }
+    @media only screen and (min-width: 501px) {
+      .contact__form {
+        height: 60vh; } }
+
+.name-section {
+  display: flex;
+  flex-direction: column; }
+
+.name-section > * {
+  width: 40%;
+  margin-bottom: 2.5%; }
+
+.message-section {
+  margin-top: 10%; }
+  @media only screen and (min-width: 501px) {
+    .message-section {
+      margin-top: 5%; } }
+  .message-section--text {
+    width: 70%;
+    height: 150px; }
+  .message-section--button {
+    margin: 0% 0% 10% 5%;
+    height: 30px;
+    border: none; }
+
 .our-story-page {
   height: 100%;
   background-color: #f8f3f1; }
 
 .story-hero-section {
-  height: 40%;
+  height: 20%;
   position: relative; }
+  @media only screen and (min-width: 501px) {
+    .story-hero-section {
+      height: 80vh; } }
   .story-hero-section--image {
     width: 100%;
     height: 100%; }
@@ -326,20 +396,27 @@ html {
       margin-left: 40%; }
 
 .story-main-section {
-  height: 60%;
+  height: 80%;
   padding: 5%;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
   .story-main-section__info {
-    width: 40%;
-    height: 80%;
-    margin-right: 10%; }
+    width: 100%;
+    height: 45%; }
     .story-main-section__info--header {
       text-align: center; }
     .story-main-section__info--text {
       line-height: 150%; }
-  .story-main-section__directions {
-    background-color: lime;
-    width: 40%;
-    margin-left: 10%; }
-    .story-main-section__directions--header {
+    .story-main-section__info--option {
+      margin-left: 20%;
+      text-align: center;
+      width: 60%; }
+  .story-main-section__outreach {
+    width: 100%;
+    height: 45%; }
+    .story-main-section__outreach--header {
       text-align: center; }
+    .story-main-section__outreach--option {
+      margin-left: 20%;
+      text-align: center;
+      width: 60%; }

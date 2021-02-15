@@ -28,7 +28,7 @@ function App() {
       <Route exact path='/contact'
         render={()=> <Contact/>}
       />
-      <CopySection />
+      {/* <CopySection />*/}
     </div>
   );
 }

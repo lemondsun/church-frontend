@@ -23,6 +23,9 @@
         object-fit: cover;
       }
       &--text {
+        @include respond(501) {
+          top: 30%;
+         }
         position: absolute;
         top: 40%;
         margin-left: $in-element-padding;
@@ -40,7 +43,7 @@
 
     &__photos-box {
       position: relative;
-      height: 60%;
+      height: 50%;
 
       &--image {
         width: 100%;
@@ -48,15 +51,21 @@
         object-fit: cover;
       }
       &--header {
+        @include respond(501) {
+          top: 5%;
+         }
         position: absolute;
         top: 10%;
         margin-left: $in-element-padding;
         z-index: 20;
       }
       &--text {
+        @include respond(501) {
+          bottom: 50%;
+        }
         position: absolute;
-        bottom: 20%;
-        left: $in-element-padding;
+        bottom: 55%;
+        left: 1%;
         margin-left: $in-element-padding;
         z-index: 20;
       }

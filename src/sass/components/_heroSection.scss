@@ -1,21 +1,25 @@
 .main-page-hero-section {
-  height: 25%;
+  @include respond(501) {
+    height: 80vh;
+  }
+  height: 20%;
   background-color: $color-secondary-dark;
   overflow: scroll;
 
   &--main-text {
-    margin: $in-element-padding;
-   
+    margin: 0 $in-element-padding;
   }
 
   &--sub-text {
-    margin: 0% 7%;
-   
-  
+    margin: 2.5% 7%;
   }
 }
 
 .logo {
-  width: 50%;
-  margin: 10% 25% 5% 25%;
+  @include respond(501) {
+    margin: .1% 30% 0% 30%;
+  }
+  width: 40%;
+  // height: 70%;
+  margin: 4.5% 30% 0% 30%;
 }

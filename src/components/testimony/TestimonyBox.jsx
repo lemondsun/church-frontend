@@ -3,7 +3,7 @@ import React from 'react'
 export default function TestimonyBox() {
   return (
     <div class='text-box'>
-        <p class='body-header text-box__user-name'>
+        <p class='header-title text-box__user-name'>
           User name
         </p>
         <p class='body-text text-box__user-text'>

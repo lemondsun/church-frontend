@@ -3,8 +3,8 @@ import React from "react";
 export default function CopySection() {
   return (
     <div class="copy-section">
-      <p class='copy-section__header body-header'>
-        le monde solutions
+      <p class='copy-section__header header-title'>
+       Judah Tabernacle Of Praise
       </p>
       <svg
         xmlns="http://www.w3.org/2000/svg"

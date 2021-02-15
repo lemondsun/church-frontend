@@ -1,5 +1,6 @@
 import React from 'react'
 import TestimonyArea from '../components/testimony/TestimonyArea'
+import TestimonyBox from '../components/testimony/TestimonyBox'
 import { Link } from "react-router-dom";
 
 export default function Testimonies() {
@@ -9,13 +10,18 @@ export default function Testimonies() {
         <div class='overlay'></div>
       <img class='hero-section--image' src={require('./../images/testimonyHeroImage.JPG')}/>
         <p class='heading-primary hero-section--header'>Members Testimonies</p>
+        <Link to="/contact">
         <p class='hero-section--link'>
-          <span class='heading-secondary'>Click here to join</span> <br /> <span class='heading-secondary'>or login to share your testimony.</span>
+          <span class='heading-secondary'>Click here to</span> <br /> <span class='heading-secondary'>share your own testimony.</span>
           </p>
+          </Link>
       </div>
       <div class='main-area'>
     
-      <TestimonyArea />
+        <TestimonyBox />
+        <TestimonyBox />
+        <TestimonyBox />
+        
       </div>
     
     </div>
