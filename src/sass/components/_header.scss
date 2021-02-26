@@ -1,11 +1,14 @@
 /* Style the navigation menu */
 
 .topnav {
+  @include respond(501) {
+    height: 9%;
+    }
   position: fixed;
   top:0;
   z-index: 1000;
   height: 8%;
-  background-color: $primary-brown;
+  background-color: $primary-purple;
   width: 100vw;
   display: block;
   text-align: center;
@@ -13,25 +16,29 @@
 
   &__title {
     z-index: 20;
-
   }
 
-  &__menu {
+  &--button {
     position: absolute;
-    right: 2.5%;
+    right: 2%;
     top: 10%;
     height: 6vh;
+    width: 11%;
 
-    &__links {
-      width: 100%;
-      position: absolute;
-      z-index: 1000;
-      height: 12vh;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      background-color: $primary-brown;
+    @include respond(501) {
+      width: 5%;
     }
+  }
+
+  &__links {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $primary-purple;
   }
 }
 

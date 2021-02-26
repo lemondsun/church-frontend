@@ -1,6 +1,19 @@
 .heading-primary {
   font-family: "Karla", sans-serif;
   color: $primary-purple;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4rem;
+  
+  @include respond(501) {
+    font-size: 8rem;
+    line-height: 8.5rem;
+   }
+}
+
+.alt-heading-primary{
+  font-family: "Karla", sans-serif;
+  color: $primary-cream;
   font-size: 3rem;
   font-weight: 800;
   line-height: 3.5rem;
@@ -48,10 +61,15 @@ a:link {
 .header-title {
   font-family: "Source Sans Pro", sans-serif;
   color: $color-white;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 2%;
+
+  @include respond(501) {
+    font-size: 3.5rem;
+    margin-top: 0%;
+  }
 }
 
 .body-text {

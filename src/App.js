@@ -22,9 +22,9 @@ function App() {
       <Route exact path='/ourstory'
         render={()=> <OurStory/>}
       />
-      <Route exact path='/testimonies'
+    { /* <Route exact path='/testimonies'
         render={() => <Testimonies/>}
-      />
+  />*/}
       <Route exact path='/contact'
         render={()=> <Contact/>}
       />

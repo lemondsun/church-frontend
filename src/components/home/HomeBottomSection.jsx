@@ -14,7 +14,7 @@ export default function HomeBottomSection() {
         <div class='info-section'>
         <div class="address-box">
           <p class='body-text'>
-          <span class='address-text'>Church Name of Praise</span><hr></hr><br/> 
+          <span class='address-text'>Judah Tabernacle of Praise</span><hr></hr><br/> 
             <span class='address-text'>111 Praise Ave</span><br/> 
           <span class='address-text'>Your Adresss, Anywhere </span><br/> 
           

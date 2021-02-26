@@ -1,25 +1,60 @@
-.main-page-hero-section {
-  @include respond(501) {
-    height: 80vh;
-  }
-  height: 20%;
-  background-color: $color-secondary-dark;
-  overflow: scroll;
-
-  &--main-text {
-    margin: 0 $in-element-padding;
-  }
-
-  &--sub-text {
-    margin: 2.5% 7%;
-  }
-}
 
 .logo {
   @include respond(501) {
-    margin: .1% 30% 0% 30%;
+    margin: 0.1% 30% 0% 30%;
   }
   width: 40%;
-  // height: 70%;
-  margin: 4.5% 30% 0% 30%;
+  margin: 0% 30% 0% 30%;
 }
+
+.main-page-hero-section {
+  margin-top: 7vh;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $primary-purple;
+  
+  &__image {
+    width: 100%;
+    object-fit: fill;
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(163, 163, 163, 0.30);
+    z-index: 10;
+    top: 0;
+  }
+}
+
+.second-level {
+  @include respond(501) {
+    top: 1%;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  width: 100%;
+  height: 88%;
+  overflow: scroll;
+  position: absolute;
+  z-index: 15;
+  top: 12%;
+ 
+  &__text-box {
+    text-align: center;
+
+    &--title {
+      @include respond(501) {
+        margin-top: 36%;
+
+      }
+      margin-top: 70%;
+      text-shadow: 1px 1px $primary-cream;
+    }
+  }
+}
+
+

@@ -10,17 +10,13 @@
 }
 
 .text-box {
-  background-color: $color-secondary-light;
-
-  overflow: scroll;
-  box-shadow: 3px 2px $shadow;
-  height: 30vh;
-  margin-bottom: $gutter-vertical-large;
+  margin: 5%;
 
   &__user-name {
+    color: $primary-purple;
   }
 
   &__user-text {
-    padding: 6% $gutter-vertical 2%;
+    padding: 6% 0% 2%;
   }
 }

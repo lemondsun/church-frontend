@@ -19,16 +19,27 @@ html {
   height: 200%;
   margin: 0px;
   padding: 0px;
-  background-color: #f8f3f1; }
+  background-color: #EDE9E6; }
 
 .heading-primary {
   font-family: "Karla", sans-serif;
-  color: #2005aa;
+  color: #990E6D;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4rem; }
+  @media only screen and (min-width: 501px) {
+    .heading-primary {
+      font-size: 8rem;
+      line-height: 8.5rem; } }
+
+.alt-heading-primary {
+  font-family: "Karla", sans-serif;
+  color: #EDE9E6;
   font-size: 3rem;
   font-weight: 800;
   line-height: 3.5rem; }
   @media only screen and (min-width: 501px) {
-    .heading-primary {
+    .alt-heading-primary {
       font-size: 8rem;
       line-height: 8.5rem; } }
 
@@ -53,7 +64,7 @@ a:link {
 
 .body-header {
   font-family: "Source Sans Pro", sans-serif;
-  color: #2005aa;
+  color: #990E6D;
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase; }
@@ -64,10 +75,14 @@ a:link {
 .header-title {
   font-family: "Source Sans Pro", sans-serif;
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0; }
+  margin-top: 2%; }
+  @media only screen and (min-width: 501px) {
+    .header-title {
+      font-size: 3.5rem;
+      margin-top: 0%; } }
 
 .body-text {
   font-family: "Source Sans Pro", sans-serif;
@@ -98,26 +113,33 @@ a:link {
   top: 0;
   z-index: 1000;
   height: 8%;
-  background-color: #B18C66;
+  background-color: #990E6D;
   width: 100vw;
   display: block;
   text-align: center; }
+  @media only screen and (min-width: 501px) {
+    .topnav {
+      height: 9%; } }
   .topnav__title {
     z-index: 20; }
-  .topnav__menu {
+  .topnav--button {
     position: absolute;
-    right: 2.5%;
+    right: 2%;
     top: 10%;
-    height: 6vh; }
-    .topnav__menu__links {
-      width: 100%;
-      position: absolute;
-      z-index: 1000;
-      height: 12vh;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      background-color: #B18C66; }
+    height: 6vh;
+    width: 11%; }
+    @media only screen and (min-width: 501px) {
+      .topnav--button {
+        width: 5%; } }
+  .topnav__links {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #990E6D; }
 
 .topnav__links--item {
   color: #ffffff;
@@ -126,40 +148,60 @@ a:link {
     .topnav__links--item {
       font-size: 2rem; } }
 
-.main-page-hero-section {
-  height: 20%;
-  background-color: #ff9100;
-  overflow: scroll; }
-  @media only screen and (min-width: 501px) {
-    .main-page-hero-section {
-      height: 80vh; } }
-  .main-page-hero-section--main-text {
-    margin: 0 5%; }
-  .main-page-hero-section--sub-text {
-    margin: 2.5% 7%; }
-
 .logo {
   width: 40%;
-  margin: 4.5% 30% 0% 30%; }
+  margin: 0% 30% 0% 30%; }
   @media only screen and (min-width: 501px) {
     .logo {
-      margin: .1% 30% 0% 30%; } }
+      margin: 0.1% 30% 0% 30%; } }
+
+.main-page-hero-section {
+  margin-top: 7vh;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #990E6D; }
+  .main-page-hero-section__image {
+    width: 100%;
+    object-fit: fill; }
+  .main-page-hero-section__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(163, 163, 163, 0.3);
+    z-index: 10;
+    top: 0; }
+
+.second-level {
+  width: 100%;
+  height: 88%;
+  overflow: scroll;
+  position: absolute;
+  z-index: 15;
+  top: 12%; }
+  @media only screen and (min-width: 501px) {
+    .second-level {
+      top: 1%;
+      overflow: hidden;
+      height: 100%; } }
+  .second-level__text-box {
+    text-align: center; }
+    .second-level__text-box--title {
+      margin-top: 70%;
+      text-shadow: 1px 1px #EDE9E6; }
+      @media only screen and (min-width: 501px) {
+        .second-level__text-box--title {
+          margin-top: 36%; } }
 
 .main-section {
   display: flex;
   flex-direction: column;
-  height: 50%;
-  padding: 5% 5%; }
-  @media only screen and (min-width: 501px) {
-    .main-section {
-      flex-direction: row; } }
+  height: 50%; }
   .main-section__left {
-    width: 90vw;
-    margin-right: 5%;
     height: 100%; }
     .main-section__left__stream-box {
       height: 35.9%;
-      margin-bottom: 5%;
+      margin: 5%;
       position: relative; }
       .main-section__left__stream-box--image {
         width: 100%;
@@ -177,43 +219,12 @@ a:link {
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: rgba(163, 163, 163, 0.63);
-        z-index: 10;
-        top: 0; }
-    .main-section__left__photos-box {
-      position: relative;
-      height: 50%; }
-      .main-section__left__photos-box--image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .main-section__left__photos-box--header {
-        position: absolute;
-        top: 10%;
-        margin-left: 5%;
-        z-index: 20; }
-        @media only screen and (min-width: 501px) {
-          .main-section__left__photos-box--header {
-            top: 5%; } }
-      .main-section__left__photos-box--text {
-        position: absolute;
-        bottom: 55%;
-        left: 1%;
-        margin-left: 5%;
-        z-index: 20; }
-        @media only screen and (min-width: 501px) {
-          .main-section__left__photos-box--text {
-            bottom: 50%; } }
-      .main-section__left__photos-box--overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: rgba(163, 163, 163, 0.63);
+        background-color: rgba(163, 163, 163, 0.43);
         z-index: 10;
         top: 0; }
   .main-section__right {
     width: 90vw;
-    margin-top: 5%;
+    margin: 5%;
     text-align: center; }
     .main-section__right__calendar {
       margin-bottom: 15%; }
@@ -231,13 +242,48 @@ a:link {
 .calendar-text {
   padding: 5% 0%; }
 
+.testimonies {
+  position: relative;
+  height: 75vh;
+  overflow: scroll; }
+  .testimonies__image-box {
+    height: 100%; }
+    .testimonies__image-box--image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .testimonies--heading {
+    position: absolute;
+    top: 10%;
+    margin-left: 5%;
+    z-index: 20; }
+    @media only screen and (min-width: 501px) {
+      .testimonies--heading {
+        top: 5%; } }
+  .testimonies--text {
+    position: absolute;
+    bottom: 55%;
+    left: 1%;
+    margin-left: 5%;
+    z-index: 20; }
+    @media only screen and (min-width: 501px) {
+      .testimonies--text {
+        bottom: 50%; } }
+  .testimonies--overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(163, 163, 163, 0.43);
+    z-index: 10;
+    top: 0; }
+
 .bottom-section {
   display: flex;
   flex-direction: column;
   position: relative;
   height: 25%;
-  background-color: #ff9100;
-  padding-top: 2%; }
+  background-color: #990E6D;
+  padding-top: 5%; }
   .bottom-section--header {
     position: absolute;
     left: 13%;
@@ -247,23 +293,23 @@ a:link {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding-top: 2%; }
+  padding-top: 5%; }
   .info-section--header {
     text-align: center;
     width: 60%;
     display: inline;
-    margin: 2% 5%; }
+    margin: 5% 5%; }
 
 .address-box {
   width: 40%;
   height: 30%;
-  margin: 5% 2%;
+  margin: 0% 5%;
   text-align: center;
-  padding-top: 2%; }
+  padding-top: 5%; }
 
 .address-text {
   display: inline-block;
-  margin: 2% 0%; }
+  margin: 5% 0%; }
 
 .social-media {
   display: flex;
@@ -287,26 +333,24 @@ a:link {
   background-color: #ffffff;
   height: 100%;
   width: 70%;
-  padding: 5% 2%;
+  padding: 5% 5%;
   border-radius: 2% 2%;
   overflow: scroll;
   margin: 10% 15%;
   padding: 5%; }
 
 .text-box {
-  background-color: #ffb900;
-  overflow: scroll;
-  box-shadow: 3px 2px #0e0e0eb2;
-  height: 30vh;
-  margin-bottom: 10%; }
+  margin: 5%; }
+  .text-box__user-name {
+    color: #990E6D; }
   .text-box__user-text {
-    padding: 6% 2% 2%; }
+    padding: 6% 0% 2%; }
 
 .home-page {
   width: 100vw; }
 
 .testimony-page {
-  background-color: #f8f3f1;
+  background-color: #EDE9E6;
   height: 100%; }
 
 .hero-section {
@@ -370,7 +414,7 @@ a:link {
 
 .our-story-page {
   height: 100%;
-  background-color: #f8f3f1; }
+  background-color: #EDE9E6; }
 
 .story-hero-section {
   height: 20%;

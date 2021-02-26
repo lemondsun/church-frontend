@@ -4,7 +4,7 @@ export default function Contact() {
   return (
    
     <div class='contact' id='contact'>
-    <p class='body-header'>MY CONTACT</p>
+    <p class='body-header'>We would love <br/> to hear from you</p>
     <form class="contact__form" action="https://formspree.io/xpzqaewg" method="POST">
       <div class='name-section'>
       <input class="contact__form--input" type="text" name="name" placeholder='YOUR NAME'></input>

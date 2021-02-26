@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import TestimonyBox from '../testimony/TestimonyBox'
 
 export default function HomeMainSection() {
   return (
@@ -13,17 +13,17 @@ export default function HomeMainSection() {
           </p>
         <div class='main-section__left__stream-box--overlay'></div>
         </div>
-        <div class='main-section__left__photos-box'>
-          <img class='main-section__left__photos-box--image' src={require('../../images/testimonyImage.jpg')} />
-          <p class='main-section__left__photos-box--header heading-primary'>
-            Read our <br/>members testimonies.
-          </p>
-            <Link to='/testimonies'>
-          <p class='main-section__left__photos-box--text'>
-            <span class='heading-secondary'>Click here to see</span><br /> <sapn class='heading-secondary'>more.</sapn>
-              </p>
-              </Link>
-          <div class='main-section__left__photos-box--overlay' ></div>
+        <div class='testimonies'>
+        <p class='heading-primary testimonies--heading'>
+        Read our <br/>members testimonies.
+      </p>
+          <div class='testimonies--overlay'></div>
+          <div class='testimonies__image-box'>
+          <img class='testimonies__image-box--image' src={require('../../images/testimonyImage.jpg')} />
+          </div>
+          <TestimonyBox />
+          <TestimonyBox />
+
         </div>
       </div>
 

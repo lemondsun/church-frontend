@@ -1,22 +1,17 @@
 .main-section {
-  @include respond(501) {
-    flex-direction: row;
-  }
-  
   display: flex;
   flex-direction: column;
   height: 50%;
-  padding: $gutter-horizontal $in-element-padding;
+ 
 
   &__left {
-    width: 90vw;
-    margin-right: 5%;
     height: 100%;
 
     &__stream-box {
       height: 35.9%;
-      margin-bottom: 5%;
+      margin: 5%;
       position: relative;
+
       &--image {
         width: 100%;
         height: 100%;
@@ -25,7 +20,7 @@
       &--text {
         @include respond(501) {
           top: 30%;
-         }
+        }
         position: absolute;
         top: 40%;
         margin-left: $in-element-padding;
@@ -35,60 +30,22 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: rgba(163, 163, 163, 0.63);
+        background-color: rgba(163, 163, 163, 0.43);
         z-index: 10;
         top: 0;
       }
     }
 
-    &__photos-box {
-      position: relative;
-      height: 50%;
-
-      &--image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      &--header {
-        @include respond(501) {
-          top: 5%;
-         }
-        position: absolute;
-        top: 10%;
-        margin-left: $in-element-padding;
-        z-index: 20;
-      }
-      &--text {
-        @include respond(501) {
-          bottom: 50%;
-        }
-        position: absolute;
-        bottom: 55%;
-        left: 1%;
-        margin-left: $in-element-padding;
-        z-index: 20;
-      }
-
-      &--overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: rgba(163, 163, 163, 0.63);
-        z-index: 10;
-        top: 0;
-      }
-    }
+    
   }
 
   &__right {
     width: 90vw;
-    margin-top: $gutter-horizontal;
+    margin: $gutter-horizontal;
     text-align: center;
 
     &__calendar {
       margin-bottom: $gutter-horizontal-large;
-     
 
       &--header {
         margin-bottom: $gutter-horizontal;
@@ -104,10 +61,6 @@
         padding: $gutter-horizontal 0%;
       }
     }
-
-    &__events {
-      
-    }
   }
 }
 
@@ -116,3 +69,48 @@
 }
 
 
+.testimonies {
+  position: relative;
+  height: 75vh;
+  overflow: scroll;
+ 
+ 
+  &__image-box {
+    height: 100%;
+  
+    &--image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &--heading {
+    @include respond(501) {
+      top: 5%;
+    }
+    position: absolute;
+    top: 10%;
+    margin-left: $in-element-padding;
+    z-index: 20;
+  }
+  &--text {
+    @include respond(501) {
+      bottom: 50%;
+    }
+    position: absolute;
+    bottom: 55%;
+    left: 1%;
+    margin-left: $in-element-padding;
+    z-index: 20;
+  }
+
+  &--overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(163, 163, 163, 0.43);
+    z-index: 10;
+    top: 0;
+  }
+}
